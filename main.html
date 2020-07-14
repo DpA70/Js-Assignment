@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+        <h1>Java Script  Day 1 Assignment </h1>
+
+        <body>
+
+            
+            <script>
+                function getD(){
+                    var time = new Date();
+                    var mon = time.getMonth()+1;
+                    var day = time.getDate();
+                    var y = time.getFullYear();
+                    document.write("mm/dd/yyyy Format : "+mon+"/"+day+"/"+y);
+                    document.write("<br>");
+                    document.write("dd/mm/yyyy Format : "+day+"/"+mon+"/"+y);
+                    document.write("<br>");
+                    document.write("yyyy/mm/dd Format : "+y+"/"+mon+"/"+day);
+                    window.print();
+                }
+            </script>
+            <button type="button" onclick="getD();">GetDate</button>
+        </body>
+</html>
+
